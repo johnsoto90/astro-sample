@@ -7,7 +7,7 @@ pipeline {
         timeout(time: 5, unit: 'MINUTES')
     }
     stages {
-        stage('Install Jest dependencies') {
+        stage('Install Jest dependencies...') {
             steps {
                 sh 'npm install jest --save-dev'
             }
