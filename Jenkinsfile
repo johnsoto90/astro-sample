@@ -9,7 +9,7 @@ pipeline {
     stages {
         stage('Install Jest dependencies...') {
             steps {
-                sh 'npm install jest --save-dev'
+                sh 'npm install --save-dev jest'
             }
         }
         stage('Test') {
