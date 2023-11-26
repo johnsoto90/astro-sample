@@ -18,4 +18,10 @@ pipeline {
             }
         }
     }
+    post {
+        //clean node modules
+        always {
+            sh 'rm -rf node_modules'
+        }
+    }
 }
