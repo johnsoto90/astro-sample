@@ -4,7 +4,7 @@ pipeline {
         nodejs '21.2.0'
     }
     options {
-        timeout(time: 5, unit: 'MINUTES')
+        timeout(time: 10, unit: 'MINUTES')
     }
     stages {
         stage('Install Jest dependencies') {
