@@ -1,15 +1,15 @@
 pipeline {
     agent any
     tools {
-        nodejs '21.2.0'
+        nodejs '18.17.0'
     }
     options {
-        timeout(time: 10, unit: 'MINUTES')
+        timeout(time: 15, unit: 'MINUTES')
     }
     stages {
-        stage('Install Jest dependencies') {
+        stage('Installing node modules') {
             steps {
-                sh 'npm install --save-dev jest'
+                sh 'npm install'
             }
         }
         stage('Test') {
